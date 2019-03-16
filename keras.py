@@ -1,2 +1,2 @@
-form keras.models import Sequential
+from keras.models import Sequential
 model = Sequential()
