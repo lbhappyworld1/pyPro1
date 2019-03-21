@@ -9,7 +9,7 @@ class TcPipeline(object):
         self.filename = open("tencent.json", "wb")
 
     def process_item(self, item, spider):
-        text = json.dumps(dict(item), ensure_ascii = False) + ",\n"
+        text = json.dumps(dict(item), ensure_ascii = False) + "\n"
         #self.log('json-pip: %s' % text)
         self.filename.write(text.encode("utf-8"))
         return item
