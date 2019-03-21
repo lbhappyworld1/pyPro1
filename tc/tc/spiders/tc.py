@@ -41,7 +41,7 @@ class TencentpositionSpider(scrapy.Spider):
             items.append(item)
             yield item
 
-        if self.offset < 100:
+        if self.offset < 20:
             self.offset += 10
             
         #self.log(items.len()) 
